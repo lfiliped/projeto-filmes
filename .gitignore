@@ -1,0 +1,17 @@
+# Arquivos e pastas do Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+frontend/.env
+backend/.env
+# Arquivos de build
+frontend/build/
+backend/build/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de IDEs
+.vscode/
+.idea/

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #F5F5F5; /* Cinza claro para fundo neutro */
+  color: #333333; /* Texto em cinza escuro para contraste */
+}
+
+.navbar {
+  background-color: #0077B6; /* Azul médio para destacar a navegação */
+  padding: 10px 20px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.movie-card {
+  background-color: #FFFFFF; /* Branco para os cards */
+  border-radius: 8px; /* Bordas arredondadas */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transição suave */
+  height: 100%; /* Altura uniforme */
+  display: flex;
+  flex-direction: column; /* Organiza o conteúdo verticalmente */
+  border: 1px solid #E0E0E0; /* Borda sutil */
+}
+
+.movie-card:hover {
+  transform: translateY(-5px); /* Levanta levemente no hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+}
+
+.movie-card img {
+  width: 100%;
+  height: 300px; /* Altura fixa para imagens */
+  object-fit: cover; /* Imagens cobrem o espaço sem distorção */
+}
+
+.movie-card .MuiCardContent-root {
+  flex-grow: 1; /* Conteúdo ocupa o espaço disponível */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribui o conteúdo */
+  padding: 10px;
+}
+
+.movie-card h6 {
+  color: #333333; /* Título em cinza escuro */
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.movie-card p {
+  color: #666666; /* Texto secundário em cinza médio */
+  font-size: 0.9rem;
+}
+
+.rating-green {
+  color: #2E8B57; /* Verde escuro para notas altas */
+}
+
+.rating-orange {
+  color: #FFA500; /* Laranja para notas médias */
+}
+
+.rating-red {
+  color: #DC143C; /* Vermelho escuro para notas baixas */
+}
+
+.MuiPagination-root {
+  margin-top: 20px;
+}
+
+.MuiPaginationItem-root {
+  color: #333333; /* Texto da paginação em cinza escuro */
+}
+
+.MuiPaginationItem-root.Mui-selected {
+  background-color: #0077B6; /* Azul para página ativa */
+  color: #FFFFFF; /* Texto branco na página ativa */
+}
+
+/* Estilos para MovieDetail */
+.movie-detail-card {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #E0E0E0;
+}
+
+.movie-detail-card img {
+  width: 100%;
+  max-width: 300px;
+  object-fit: cover;
+}
+
+.movie-detail-card .MuiCardContent-root {
+  padding: 24px;
+}
+
+.comments-list {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.comment-item {
+  padding: 16px;
+}
+
+.comment-item .MuiListItemText-primary {
+  color: #333333;
+  font-size: 1rem;
+}
+
+.comment-item .MuiListItemText-secondary {
+  color: #666666;
+  font-size: 0.875rem;
+}
