@@ -17,8 +17,6 @@ connectDB().then(seedAdminUser);
 app.use(
   cors({
     origin: [
-      'http://localhost:3000',
-      'http://localhost:3001', 
       'https://filmes-backend-g1tv.onrender.com',// Temporarily allow 3001 until port is fixed
     ],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
